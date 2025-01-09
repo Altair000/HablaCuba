@@ -2,7 +2,7 @@ import telebot
 from cc_gen import main
 from autokey import chk
 
-TOKEN = '7698270668:AAFF_Q3XxBQmFA9hGj98EOhDuP7Rku6kwU0'
+TOKEN = '7698270668:AAGb1rPBU27IlMH_vmTMFpLzAE9slnSFonk'
 bot = telebot.TeleBot(TOKEN)
 
 
