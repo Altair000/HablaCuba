@@ -3,3 +3,4 @@ pyTelegramBotAPI
 selenium
 webdriver-manager
 gunicorn
+names
