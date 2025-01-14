@@ -6,6 +6,7 @@ from autokey import chk
 
 TOKEN = '7698270668:AAGb1rPBU27IlMH_vmTMFpLzAE9slnSFonk'
 WEBHOOK_URL = os.getenv('RENDER_EXTERNAL_URL')
+port = int(os.environ.get("PORT", 5000))
 bot = telebot.TeleBot(TOKEN)
 app = Flask(__name__)
 
@@ -107,4 +108,4 @@ def reset_variables():
     chat_id = None
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8443)
+    app.run(host='0.0.0.0', port=port)
