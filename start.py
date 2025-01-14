@@ -5,11 +5,7 @@ from cc_gen import main
 from autokey import chk
 
 TOKEN = '7698270668:AAGb1rPBU27IlMH_vmTMFpLzAE9slnSFonk'
-nombre_proyecto = os.getenv("REPL_SLUG")
-nombre_usuario = os.getenv("REPL_OWNER")
-if nombre_proyecto and nombre_usuario:
-    WEBHOOK_URL = f"https://{nombre_proyecto}.{nombre_usuario}.repl.co"
-
+WEBHOOK_URL = os.getenv('RENDER_EXTERNAL_URL')
 bot = telebot.TeleBot(TOKEN)
 app = Flask(__name__)
 
